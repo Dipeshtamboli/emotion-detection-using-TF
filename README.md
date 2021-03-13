@@ -25,3 +25,19 @@ cd emotion-detection-using-TF
 python inference.py --filename img.jpg
 ```
 Here, we need to give the argument for test image name. 
+
+## Algorithm
+
+* First, the **haar cascade** method is used to detect faces in each frame of the webcam feed.
+
+* The region of image containing the face is resized to **48x48** and is passed as input to the CNN.
+
+* The network outputs a list of **softmax scores** for the seven classes of emotions.
+
+* The emotion with maximum score is displayed on the screen.
+
+## Example Output
+
+![Mutiface](sample_images/test_me.jpg)
+
+Here, the sample input image is of the size 4.16 MB and it is till able to detect it.
